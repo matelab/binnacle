@@ -15,7 +15,7 @@
 		<div class="col-sm-12 col-md-12 col-lg-12">
 			
 			<?php
-			include 'conn.php';
+			include 'models/conn.php';
 			
 			$email = $_POST['email'];				
 			$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);

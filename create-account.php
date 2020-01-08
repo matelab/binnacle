@@ -15,7 +15,7 @@
 
 	<?php
 
-	include 'conn.php';
+	include 'models/conn.php';
 
 	$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
