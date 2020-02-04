@@ -18,7 +18,7 @@
       integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="./resources/css/custom.css" />
   </head>
   <body>
     <div class="container">
@@ -36,7 +36,11 @@
           <h3>Create an account</h3>
           <hr />
 
-          <form method="post" action="create-account.php" method="POST">
+          <form
+            method="post"
+            action="./controllers/controller_createAccount.php"
+            method="POST"
+          >
             <div class="form-group">
               <input
                 type="text"

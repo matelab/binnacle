@@ -19,7 +19,7 @@ session_start();
 		
 			<?php
 			// Connection info. file
-			include 'models/conn.php';	
+			include '../models/conn.php';	
 			
 			// Connection variables
 			$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
@@ -34,30 +34,31 @@ session_start();
 			$password = $_POST['password'];
 			
 			// Query sent to database
-			$result = mysqli_query($conn, "SELECT * FROM users WHERE Email = '$email'");
+			$result = mysqli_query($conn, "SELECT * FROM users WHERE email = '$email'");
 			
 			// Variable $row hold the result of the query
 			$row = mysqli_fetch_assoc($result);
 			
 			// Variable $hash hold the password hash on database
-			$hash = $row['Password'];
+			$hash = $row['password'];
 			
 			/* 
 			password_Verify() function verify if the password entered by the user
 			match the password hash on the database. If everything is OK the session
 			is created for one minute. Change 1 on $_SESSION[start] to 5 for a 5 minutes session.
 			*/
-			if (password_verify($_POST['password'], $hash)) {	
+			if (password_verify($_POST['password'], $hash)) {		
 				
 				$_SESSION['loggedin'] = true;
-				$_SESSION['name'] = $row['Name'];
+				$_SESSION['name'] = $row['name'];
 
-					header("location: views/userPanel.php");
+				if($row['active'] == 1){
+					header("location: ../views/userPanel.php");
+				} 
 				
 
 			} else {
-				echo "<div class='alert alert-danger mt-4' role='alert'>Revisa tu E-mail o Password!
-				<p><a href='index.html'><strong>Por favor, intenta nuevamente!</strong></a></p></div>";			
+				header("location: ../views/badLogin.html");		
 			}	
 			?>
 		</div>

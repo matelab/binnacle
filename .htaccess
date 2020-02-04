@@ -1,0 +1,4 @@
+AuthName "Authenticate"
+AuthType "basic"
+AuthUserFile /home/c1401544/public_html/dev/.passwd
+Require valid-user
