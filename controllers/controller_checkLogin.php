@@ -53,7 +53,7 @@ session_start();
 				$_SESSION['name'] = $row['name'];
 
 				if($row['active'] == 1){
-					header("location: ../views/userPanel.php");
+					header("location: ../views/userPanel/index.php");
 				} 
 				
 
