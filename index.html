@@ -1,107 +1,126 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
-    <title>Binnacle | Start</title>
-
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-    <!-- Custom fonts for this template-->
-  <link href="./resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <title>docuRepo | Start</title>
 
-  <!-- Custom styles for this template-->
-  <link href="./resources/css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./resources/css/custom.css" />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="./resources/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="./resources/css/scrolling-nav.css" rel="stylesheet" />
   </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1>Binnacle!</h1>
-          <p>
-            Documentation made easy for developers :)
-          </p>
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">docuRepo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./views/login.html"
+                >Login!</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link js-scroll-trigger"
+                href="./views/register/register.html"
+                >Register!</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
 
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <h3>Create an account</h3>
-          <hr />
+    <header class="bg-primary text-white">
+      <div class="container text-center">
+        <h1>Welcome to docuRepo</h1>
+        <p class="lead">
+          A way to help humans to keep track of their everyday work and studies.
+        </p>
+      </div>
+    </header>
 
-          <form
-            method="post"
-            action="./controllers/controller_createAccount.php"
-            method="POST"
-          >
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control"
-                name="name"
-                placeholder="Enter your name"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control"
-                name="email"
-                aria-describedby="emailHelp"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <input
-                type="password"
-                class="form-control"
-                name="password"
-                placeholder="Create Password"
-                required
-              />
-            </div>
-
-            <button type="submit" class="btn btn-success btn-block">
-              Create my account
-            </button>
-          </form>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <h3>Login</h3>
-          <hr />
-          <p>
-            Already have an account?
-            <a href="./views/login.html" title="Login Here">Login here!</a>
-          </p>
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>About this page</h2>
+            <p class="lead">
+              This is a great place to talk about your webpage. This template is
+              purposefully unstyled so you can use it as a boilerplate or
+              starting point for you own landing page designs! This template
+              features:
+            </p>
+            <ul>
+              <li>Clickable nav links that smooth scroll to page sections</li>
+              <li>
+                Responsive behavior when clicking nav links perfect for a one
+                page website
+              </li>
+              <li>
+                Bootstrap's scrollspy feature which highlights which section of
+                the page you're on in the navbar
+              </li>
+              <li>
+                Minimal custom CSS so you are free to explore your own unique
+                design options
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-      crossorigin="anonymous"
-    ></script>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark footerBottom">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Powered by
+          <a href="http://www.matelab.com.ar" target="_blank">Matelab</a>
+        </p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="./resources/vendor/jquery/jquery.min.js"></script>
+    <script src="./resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="./resources/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="./resources/js/scrolling-nav.js"></script>
   </body>
 </html>
