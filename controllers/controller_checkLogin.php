@@ -32,7 +32,7 @@ if (password_verify($_POST['password'], $hash)) {
     $_SESSION['loggedin'] = true;
     $_SESSION['name'] = $row['userName'];
     if ($row['active'] == 1) {
-        include "../views/userPanel/index.php";
+        header("location: http://docurepo.com/views/userPanel/index.php");
     }
 } else {
     include "../views/badLogin.html";
