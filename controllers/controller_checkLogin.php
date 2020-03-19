@@ -17,13 +17,13 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 // Query sent to database
-$result = mysqli_query($conn, "SELECT * FROM users WHERE email = '$email'");
+$result = mysqli_query($conn, "SELECT * FROM users WHERE Email = '$email'");
 
 // Variable $row hold the result of the query
 $row = mysqli_fetch_assoc($result);
 
 // Variable $hash hold the password hash on database
-$hash = $row['password'];
+$hash = $row['Password'];
 
 /*
 password_Verify() function verify if the password entered by the user

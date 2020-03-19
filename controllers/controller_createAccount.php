@@ -6,7 +6,7 @@
 	$pass = $_POST['password'];
 
 	// Calls the connection file
-	include 'models/conn.php';
+	include '../models/conn.php';
 
 	$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
